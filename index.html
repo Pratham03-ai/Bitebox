@@ -5,57 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiteBox</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+
 <style>
-        *{
+
+    *{
             margin: 0;
             padding: 0;
+
         }
-        nav {
-            background-color: beige;
+
+        nav{
+            background-color: black;
+            padding:10px;
+            
         }
-        
         ul{
-            display: inline;
+            /* display: inline-block; */
+            float: right;
+            padding-top:10px;
+            padding-right:20px;
         }
-        li{
-            display: inline;
-            padding: 10px;
-            margin: 10px;
+    li {
+            display: inline-block;
+            margin-left:20px;
             
             
-        }
-        div{
-            display: inline;
-        }
+            
 
-
-        section{
-            height: 700px;
-            background-color: Ivory;
-        }
-        footer{
-            background-color: #b9aeaeb7;
         }
         h1{
-            display: inline;
-        }
-</style>
+            display: inline-block;
 
+        }
+
+        a{
+            text-decoration: none;
+            color: white
+        }
+    
+    nav a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        nav li:last-child a{
+            background-color: red;
+            border-radius: 5px;
+            padding:5px;
+        }
+        nav li:last-child a:hover{
+            background-color: white;
+            color: red;
+        }
+
+    section{
+        background-color: beige;
+        height: 600px;
+
+    }
+    footer{
+        background-color: gray;
+        height: 50px;
+    }
+    
+
+ 
+
+</style>
+</head>
 
 <body>
     <header>
         <nav>
             <div>
-                <h1>Bite<span style="color: red;">Box</span></h1>
+                <h1 style="color: white;">Bite<span style="color: red;">Box</span></h1>
                 <ul>
 
-            <li><a href="./home.html"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="./menu.html"><i class="fa-solid fa-utensils"></i></a></li>
-            <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li>
-            <li><a href="./bite-deals.html"><i class="fa-solid fa-tag"></i></a></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./bite-deals.html">Bitedeals</a></li>
+             <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li>
             <li><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
-            <li><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+            <li><a href="./login.html" style="color:white "><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
                 </ul>
             </div>
         </nav>
