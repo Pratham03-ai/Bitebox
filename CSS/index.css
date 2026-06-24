@@ -1,0 +1,124 @@
+*{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav{
+            background-color: black;
+            padding: 10px;
+            
+        }
+        ul{
+            /* display: inline-block; */
+            float: right;
+            padding-top:10px;
+            padding-right:20px;
+        }
+    li {
+            display: inline-block;
+            margin-left:30px;
+            
+    }
+    h1{
+            display: inline-block;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: white
+        }
+    
+    nav a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        nav li:last-child a{
+            background-color: red;
+            border-radius: 5px;
+            padding:5px;
+        }
+        nav li:last-child a:hover{
+            background-color: white;
+            color: red;
+        }
+
+
+        .hero
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* background-color: aqua; */
+            height: 60vh;
+            background: url('../images/hero.jpg') no-repeat center/cover;
+        }
+        .hero button{
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover{
+            color: darkred;
+        }
+        .video-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 10px;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            
+        }
+
+        .video-text
+        {
+            /* width: 100%; */
+            flex: 1;
+        }
+
+        .video-box
+        {
+            /* width: 100%; */
+            flex: 1;
+        }
+
+        .about{
+            padding: 60px 20px;
+            text-align: center;
+            background-color: black;
+
+        }
+        .about h2{
+            color: red;
+        }
+        .about p{
+            max-width: 700px;
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: auto;
+            
+        }
+
+    
+    footer{
+        background-color: gray;
+        height: 50px;
+    }
+    
+
+
+   
+    
+
