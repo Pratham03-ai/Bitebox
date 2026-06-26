@@ -1,0 +1,182 @@
+*{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav{
+            background-color: black;
+            padding: 10px;
+            position: sticky;
+            
+        }
+        ul{
+            /* display: inline-block; */
+            float: right;
+            padding-top:10px;
+            padding-right:20px;
+        }
+    li {
+            display: inline-block;
+            margin-left:30px;
+            
+    }
+    h1{
+            display: inline-block;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: white
+        }
+    
+    nav a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        nav li:last-child a{
+            background-color: red;
+            border-radius: 5px;
+            padding:5px;
+        }
+        nav li:last-child a:hover{
+            background-color: white;
+            color: red;
+        }
+        .cart{
+    background-color: lightgray;
+    width: 95%;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    padding-right: 35px;
+}
+        
+
+        .item{
+            display: flex;
+            justify-content: space-between;
+            object-fit: cover;
+            gap: 15px;
+            /* border-radius: 10px; */
+        }
+        .cart img{
+            min-height: 85px;
+            max-width: 150px;
+            /* padding: 10px; */
+            border-radius: 30px;
+            text-align: center;
+            /* margin-left: 10px; */
+            padding-left: 10px;
+
+        }
+       
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            margin:20px;
+            align-items: center;
+            /* border-radius: 20px; */
+        }
+
+        thead{
+            background: #f80202;
+            color: white;
+        }
+
+        th , td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        tbody tr{
+            border-bottom: 1px solid #ddd;
+        }
+
+        .quantity-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+    
+        .quantity-box button{
+        width: 28px;
+        height: 28px;
+        border: none;
+        background: red;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .quantity-box button:hover{
+        background: #cc0000;
+    }
+
+    .quantity-box span{
+        font-size: 16px;
+        font-weight: bold;
+        min-width: 20px;
+        text-align: center;
+    }
+
+    thead{
+        font-weight: 5px;
+    }
+
+    .grand-total td{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .grand-total button{
+        height: 50px;
+        width: 80px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    }
+    .grand-total button:hover{
+        color: darkred;
+    }
+    .remove{
+        /* font-size: 10px; */
+        height: 40px;
+        width: 50px;
+        background-color: red;
+        color: black;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .remove:hover{
+        background-color:darkred;
+    }
+  
+     
+
+
+
+    
+    
+    
+    
+    
+    
+    footer{
+        color:white;
+        height: 30px;
+        text-align: center;
+        padding: 20px;
+    }

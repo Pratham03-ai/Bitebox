@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image-x icon" href="images/favicon/favicon_io/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> Welcome to Cart Page</h1>
+    <header>
+        <nav>
+            <div>
+                <img src="./images/logo3.png" alt="" width="85px" height="26px">
+                <ul>
+
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./bite-deals.html">Bitedeals</a></li>
+             <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+            <li><a href="./login.html" style="color:white "><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="cart">
+        <table>
+            <tr>
+                <thead>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+                </thead>
+            </tr>
+
+            <tbody>
+
+            <tr>
+                <td class="item">
+                    <img src="images/img.avif" alt="no image">
+                    <div class="cart-img">
+                        <h2>Juicy Burger</h2><br>
+                        <p>Double-stacked cheeseburger with char-marked patties, molten American cheese, caramelized onions, and pickles, all dripping with smoky house sauce on a buttery toasted bun.</p>
+                    </div>
+                
+                </td>
+                <td>20$</td>
+                <td>
+                    <div class="quantity-box">
+                   <button>-</button>
+                   <span>2</span>
+                   <button>+</button></td>
+                    </div>
+                </td>
+                <td>40$</td>
+                <td><button class="remove"><i class="fa-solid fa-square-xmark"></i></button></td>
+                    
+            </tr>
+             <tr>
+                <td class="item">
+                    <img src="images/pizza.webp" alt="no image">
+                    <div class="cart-img">
+                        <h2>Pepperoni Pizza</h2><br>
+                        <p>A golden-crusted pizza fresh from a wood-fired oven, topped with bubbling mozzarella, crushed San Marzano tomatoes, and fragrant fresh basil.</p>
+                    </div>
+                
+                </td>
+                <td>50$</td>
+                <td>
+                    <div class="quantity-box">
+                   <button>-</button>
+                   <span>1</span>
+                   <button>+</button></td>
+                    </div>
+                </td>
+                <td>50$</td>
+                <td><button class="remove"><i class="fa-solid fa-square-xmark"></i></button></td>
+                    
+            </tr>
+             <tr>
+                <td class="item">
+                    <img src="images/pasta.jpg" alt="no image">
+                    <div class="cart-img">
+                        <h2>White Sauce Pasta</h2><br>
+                        <p>Creamy fettuccine Alfredo tangled with golden-sautéed mushrooms, fresh herbs, and a glossy pour of white wine butter sauce.</p>
+                    </div>
+                
+                </td>
+                <td>25$</td>
+                <td>
+                    <div class="quantity-box">
+                   <button>-</button>
+                   <span>1</span>
+                   <button>+</button></td>
+                    </div>
+                </td>
+                <td>25$</td>
+                <td><button class="remove"><i class="fa-solid fa-square-xmark"></i></button></td>
+                    
+            </tr>
+            <tr class="grand-total">
+                <td colspan="3">Grand Total</td>
+                <td>115$</td>
+                <td><button>Proceed</button></td>
+
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <footer>
+    <h3> &copy; 2023 BiteBox. All rights reserved.</h3>
+</footer>
 </body>
 </html>
