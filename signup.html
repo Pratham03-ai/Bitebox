@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiteBox</title>
+    <title>Sign-up Page</title>
+    <link rel="stylesheet" href="CSS/signup.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image-x icon" href="images/favicon/favicon_io/favicon-32x32.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-       
 </head>
+   <header>
 
-<body>
-    <header>
         <nav>
             <div>
                 <img src="./images/logo3.png" alt="" width="85px" height="26px">
@@ -25,43 +26,33 @@
             <li><a href="./bite-deals.html">Bitedeals</a></li>
              <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li>
             <li><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
-            <li><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
+            <li><a href="./login.html" style="color:white "><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
-    <section class="hero">
-        <section class="hero-content">
-            <h1>Delicious Food Delivered Fast</h1>
-            <p>Order favourite melas anytime and anywhere</p>
-            <button>Order now</button>
-        </section>
-    </section>
-    <section class="video-section">
-        <div class="video-text">
-            <h2> Food is Delicious</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam tenetur facere atque distinctio esse sint quas veniam quis maiores cupiditate doloremque voluptates minima, ullam repudiandae fugiat illum animi. Illo.</p>
+        </header>
+        <body>
+            <section class="auth-container">
+        <div class="auth-box">
+            <h2 style="color: black;">Create <span style="color: red;">Account</span></h2>
+            <form>
+                <label for="">Full name</label>
+                <input type="email" placeholder="Enter Full name"required>
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter Email"required>
+                <label for="">Password</label>
+                <input type="password" placeholder="Enter Password"required>
+                <label for="">Confirm password</label>
+                <input type="email" placeholder="Enter Confirm Password"required>
+            
 
-        </div>
-        <div class="video-box">
-                <video autoplay muted loop playsinline>
-                <source src="images/video.mp4" type="video/mp4">
-            </video>
+
+                <button type="submit">Signup</button>
+            </form>
+            <!-- <p><a href="signup.html">Forgot password</a></p> -->
+            <p>Already have an account ?. <a href="login.html">Login</a></p>
         </div>
     </section>
-   <section class="about">
-    <h2>Who are we</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit, ut ab suscipit debitis sit corrupti ratione quis earum ipsam nihil officia corporis esse repellat doloremque illo mollitia temporibus inventore!
-    </p>
-   </section>
-<section >
-    <h3>This is the section</h3>
-</section>
-
-<footer>
-    <h3> &copy; 2023 BiteBox. All rights reserved.</h3>
-</footer>
 
 </body>
 </html>

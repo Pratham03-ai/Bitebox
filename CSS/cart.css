@@ -65,7 +65,7 @@
             /* border-radius: 10px; */
         }
         .cart img{
-            min-height: 85px;
+            height: 85px;
             max-width: 150px;
             /* padding: 10px; */
             border-radius: 30px;
@@ -82,7 +82,7 @@
             background-color: #fff;
             margin:20px;
             align-items: center;
-            /* border-radius: 20px; */
+            border-radius: 20px;
         }
 
         thead{
