@@ -1,0 +1,187 @@
+*{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav{
+            background-color: black;
+            padding: 10px;
+            
+        }
+        ul{
+            /* display: inline-block; */
+            float: right;
+            padding-top:10px;
+            padding-right:20px;
+        }
+    li {
+            display: inline-block;
+            margin-left:30px;
+            
+    }
+    h1{
+            display: inline-block;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: white
+        }
+    
+    nav a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        nav li:last-child a{
+            background-color: red;
+            border-radius: 5px;
+            padding:5px;
+        }
+        nav li:last-child a:hover{
+            background-color: white;
+            color: red;
+        }
+
+        .deals-page{
+            padding: 40px;
+            background: #f8f8f8;
+        }
+
+        .deal-hero{
+            background-color: red;
+            background: linear-gradient(135deg,rgb (0,0,0), #202020);
+            color:white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 2px solid black;
+            box-shadow: 4px 4px 9px 3px gray;
+        }
+        .deal-hero h1{
+            font-size: 40px;
+        }
+        .deal-hero p{
+            font-size: 18px;
+        }
+        .section-title{
+            margin: 30px 0 20px;
+            font-size: 28px;
+            color: #000;
+        }
+
+        .combo-section{
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+        }
+        .combo-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .combo-card{
+            width: 90%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            gap: 20px;
+            box-shadow: 2px 2px 8px 5px gray;
+
+        }
+
+        .combo-card img{
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+    
+        }
+
+        .combo-card h4{
+            margin: 10px 0;
+        }
+
+        .combo-card p{
+            padding: 5px;
+        }
+
+        .combo-card button{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 90px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .combo-card button:hover{
+            background-color: darkred;
+        }
+        .combo-section{
+            background-color: azure;
+            box-shadow: 2px 2px 8px 5px gray;
+        }
+
+        .combo-card h4 span{
+            text-decoration: line-through;
+            color: gray;
+            margin-right: 10px;
+        }
+
+        .deal-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .sec-title{
+            margin-top: 20px;
+        }
+
+        .deal-card{
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px gray;
+            margin-top: 20px;
+            /* border: 2px solid #000; */
+        }
+
+        .deal-card p{
+            padding-top: 10px;
+        }
+        .deal-card span{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: black;
+            color: white;
+            border-radius: 5px;
+         }
+         .deal-card span:hover{
+            color: red;
+         }
+
+         .red {border-top: 5px solid red;}
+         .yellow {border-top: 5px solid yellow;}
+         .green {border-top: 5px solid green;}
+
+        
+
+
+
+
+        /* footer{
+        color:white;
+        height: 30px;
+        text-align: center;
+        padding: 20px;
+    } */
