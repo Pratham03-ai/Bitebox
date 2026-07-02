@@ -21,10 +21,10 @@
                 <img src="./images/logo3.png" alt="" width="85px" height="26px">
                 <ul>
 
-            <li><a href="./home.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./bite-deals.html">Bitedeals</a></li>
-             <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li>
+             <!-- <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li> -->
             <li><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
             <li><a href="./login.html" style="color:white "><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
                 </ul>
@@ -36,19 +36,24 @@
     <section class="auth-container">
         <div class="auth-box">
             <h2 style="color: black;">Login to Bite<span style="color: red;">Box</span></h2>
-            <form>
-                <label for="">Email</label>
-                <input type="email" placeholder="Enter Email"required>
-                <label for="">Password</label>
-                <input type="password" placeholder="Enter Password"required>
+            <form onsubmit="login(event);return false;">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
     
 
 
                 <button type="submit">Login</button>
+                    <p id="error" style="color: red;">
+
+                    </p>
             </form>
             <p><a href="signup.html">Forgot password</a></p>
             <p>Don't have an account ?. <a href="signup.html">Signup</a></p>
         </div>
     </section>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>

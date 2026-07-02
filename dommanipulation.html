@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading" onclick="changeColor()">Hello World!</h1>
+    <button onclick="confirm('Do you know!')">Click here</button>
+<button onclick="alert('Button clicked!')">Click here</button>
+<button type="button" onclick="testing()">Call function</button>
+<button type="button" onclick="test()">Call function new</button>
+
+<script>
+    function testing()
+    {
+        var age = prompt("Enter your age");
+        if(age >= 18)
+        {
+            alert("You are eligible to vote");
+        }
+        else
+        {
+            alert("You are not eligible to vote");
+        }
+    }
+
+    function test()
+    {
+        var num = prompt("Enter your number");
+        if(num%2==0)
+        {
+            alert("Number is Even: "+num);
+        }
+        else
+        {
+            alert("Number is odd: "+num);
+        }
+    }
+
+    
+    function changeColor()
+    {
+        document.getElementById("heading").innerHTML = "Hello World! Changed";
+    }
+    const card1 = document.createElement("div");
+    card1.style.width = "350px";
+    card1.style.height = "400px";
+    card1.style.backgroundColor = "beige";
+
+    const img = document.createElement("img");
+    img.src = "https://thumbs.dreamstime.com/b/tasty-burger-french-fries-fire-close-up-home-made-flames-137249900.jpg";
+    img.style.width = "250px";
+    img.style.height = "200px";
+    card1.appendChild(img);
+    document.body.appendChild(card1);
+</script>
+</body>
+</html>
