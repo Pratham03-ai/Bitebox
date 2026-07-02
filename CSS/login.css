@@ -83,7 +83,7 @@
             margin: 10px;
         }
         input{
-            width: 200px;
+            width: 300px;
             padding: 10px;
             border-radius: 10px;
             border: 1px solid black;
@@ -91,7 +91,7 @@
 
         button{
             height: 40px;
-            width: 225px;
+            width: 325px;
             border-radius: 20px;
             background-color: red;
             color: white;
@@ -112,6 +112,7 @@
         .auth-box p{
             margin-top: 15px;
             font-size: 14px;
+            text-align: left;
         }
 
         .auth-container{
@@ -122,6 +123,12 @@
 
         .auth-box label{
             text-align: left;
+        }
+
+        .post i {
+           padding-top: 90px;
+
+           
         }
 
     

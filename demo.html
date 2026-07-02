@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Attributes</title>
+</head>
+<body>
+    <h1 id="title">Welcome</h1>
+    <!-- syntax of query selector
+    document.querySelector("selector"); -->
+
+<script>
+let heading = document.querySelector("#title");
+heading.textContent = "Hello JavaScript";
+</script>
+
+<p class="msg">First Paragraph</p>
+<p class="msg">Second Paragraph</p>
+
+<script>
+let para = document.querySelector(".msg");
+para.style.color = "red";
+</script>
+
+
+<h2>Heading 1</h2>
+<h2>Heading 2</h2>
+
+<script>
+let head = document.querySelector("h2");
+head.style.color = "blue";
+</script>
+
+<!-- query selector all -->
+<button>Save</button>
+<button>Edit</button>
+<button>Delete</button>
+
+<script>
+let buttons = document.querySelectorAll("button");
+
+buttons.forEach(function(btn) {
+    btn.style.background = "orange";
+});
+</script>
+
+
+
+    <!-- <script src="JS/demo.js"></script> -->
+</body>
+</html>
