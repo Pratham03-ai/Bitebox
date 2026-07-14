@@ -18,12 +18,19 @@
         <nav>
             <div>
                 <img src="./images/logo3.png" alt="" width="85px" height="26px">
-                <ul>
 
+                
+                <button class="menu-btn text-white" onclick="toggleMenu()">
+                    <i id="menuIcon"  class="fa-solid fa-bars"></i>
+                </button>
+
+
+
+                
+            <ul id="navMenu" >
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./biteDeals.html">Bitedeals</a></li>
-             <!-- <li><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></li> -->
             <li><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
             <li><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
                 </ul>
@@ -39,8 +46,8 @@
     </section>
     <section class="video-section">
         <div class="video-text">
-            <h2> Food is Delicious</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam tenetur facere atque distinctio esse sint quas veniam quis maiores cupiditate doloremque voluptates minima, ullam repudiandae fugiat illum animi. Illo.</p>
+            <h2> Food is <span style="color: red;">Delicious</span></h2>
+            <p>BiteBox is your one-stop destination for delicious food delivered right to your doorstep. From juicy burgers and cheesy pizzas to creamy pasta, refreshing beverages, and tasty desserts, we bring your favorite meals together in one place. With quick delivery, fresh ingredients, and an easy ordering experience, BiteBox makes every bite unforgettable.</p>
 
         </div>
         <div class="video-box">
@@ -52,16 +59,46 @@
    <section class="about">
     <h2>Who are we</h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint odit, ut ab suscipit debitis sit corrupti ratione quis earum ipsam nihil officia corporis esse repellat doloremque illo mollitia temporibus inventore!
-    </p>
+        At BiteBox, we are passionate about great food and exceptional service. Our team is dedicated to making food ordering simple, reliable, and enjoyable for everyone. We partner with trusted restaurants to bring freshly prepared meals directly to your doorstep, ensuring quality, speed, and customer satisfaction in every delivery.
    </section>
-<section >
-    <h3>This is the section</h3>
-</section>
 
-<footer>
-    <h3> &copy; 2023 BiteBox. All rights reserved.</h3>
-</footer>
+  <footer>
+        <div class="footer-container">
+             <div class="footer-box">
+                <h2>Bite<span>Box</span></h2>
+                <p>Experience the best bites in town with BiteBox. Your satisfaction is our priority.</p>
+            </div>
+            
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul class="footerlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="biteDeals.html">Bite Deals</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Email: info@bitebox.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+            
+        </div>
+            
+
+    </footer>
 <script src="JS/script.js"></script>
 </body>
 </html>

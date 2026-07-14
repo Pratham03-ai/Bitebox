@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js Attributes</title>
+    <title>First and Last Name Form</title>
+    <style>
+        #myForm{
+            height: 300px;
+            width: 350px;
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="title">Welcome</h1>
-    <!-- syntax of query selector
-    document.querySelector("selector"); -->
 
-<script>
-let heading = document.querySelector("#title");
-heading.textContent = "Hello JavaScript";
-</script>
+    <h2>User Form</h2>
 
-<p class="msg">First Paragraph</p>
-<p class="msg">Second Paragraph</p>
+    <form id="myForm" onsubmit="return getNames()">
 
-<script>
-let para = document.querySelector(".msg");
-para.style.color = "red";
-</script>
+        <label>First Name:</label><br>
+        <input type="text" id="fname" placeholder="Enter First Name"><br><br>
 
+        <label>Last Name:</label><br>
+        <input type="text" id="lname" placeholder="Enter Last Name"><br><br>
 
-<h2>Heading 1</h2>
-<h2>Heading 2</h2>
+        <input type="submit" value="Submit">
 
-<script>
-let head = document.querySelector("h2");
-head.style.color = "blue";
-</script>
+    </form>
 
-<!-- query selector all -->
-<button>Save</button>
-<button>Edit</button>
-<button>Delete</button>
+    <script>
+        function getNames() {
 
-<script>
-let buttons = document.querySelectorAll("button");
+            // Get input values
+            let firstName = document.getElementById("fname").value;
+            let lastName = document.getElementById("lname").value;
 
-buttons.forEach(function(btn) {
-    btn.style.background = "orange";
-});
-</script>
+            // Display values in Console
+            console.log("First Name: " + firstName);
+            console.log("Last Name: " + lastName);
 
+            // Prevent page refresh
+            return false;
+        }
+    </script>
 
-
-    <!-- <script src="JS/demo.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+div{
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+}
+
+@media (max-width: 700px){
+    div {
+        background-image : url('../images/burgerfries.jpeg')
+    }
+}

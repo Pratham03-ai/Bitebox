@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Templates</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-auto-columns: 120px;
+    }
+    .grid-box {
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        height: 50px;
+        width: 100px;
+        margin: 10px;
+    }
+        
+</style>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-box" style="background-color: aqua;">Item 1</div>
+        <div class="grid-box" style="background-color: red;">Item 2</div>
+        <div class="grid-box">Item 3</div>
+        <div class="grid-box">Item 4</div>
+         <div class="grid-box">Item 5</div>
+
+    </div>
+    
+</body>
+</html>
