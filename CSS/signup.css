@@ -123,7 +123,114 @@
         .auth-box label{
             text-align: left;
         }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+nav{
+
+    background:black;
+    color:white;
+
+    /* display:flex; */
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+    position:relative;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:20px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+#menuIcon{
+
+    display:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    #menuIcon{
+         display:block;
+         display: flex;
+
+
+         
+
+    }
+
+    .menu-btn{
+        float:right;
+    }
+
+    
+    nav ul{
+
+        display:none;
+
+        flex-direction:column;
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        background:black;
+
+        text-align:center;
+
+    }
+
+    nav ul.show{
+
+        display:flex;
+
+    }
+
+    nav ul li{
+
+        padding:15px;
+
+    }
+
+    nav ul li:hover{
+        color: red;
+        cursor: pointer;
+    }
+
+}
 
 
 
